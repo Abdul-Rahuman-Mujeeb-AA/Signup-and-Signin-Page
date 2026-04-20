@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup AND Signin Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="overlay"></div>
+
+        <div class="wrapper">
+
+            <!-- SIGN UP -->
+            <form id="signupForm" class="form active">
+                <h2>Create Account</h2>
+
+                <input type="text" id="name" placeholder="Full Name">
+                <small></small>
+
+                <input type="email" id="email" placeholder="Email">
+                <small></small>
+
+                <input type="text" id="phone" placeholder="Phone Number">
+                <small></small>
+
+                <input type="text" id="city" placeholder="City">
+                <small></small>
+
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Password">
+                    <span onclick="togglePassword('password')">👁</span>
+                </div>
+                <small></small>
+
+                <div class="password-box">
+                    <input type="password" id="confirmPassword"
+                        placeholder="Confirm Password">
+                    <span onclick="togglePassword('confirmPassword')">👁</span>
+                </div>
+                <small></small>
+
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="goToLogin">Sign
+                        In</a></p>
+            </form>
+
+            <!-- SIGN IN -->
+            <form id="loginForm" class="form">
+                <h2>Sign In</h2>
+
+                <input type="email" id="loginEmail" placeholder="Email">
+                <small></small>
+
+                <div class="password-box">
+                    <input type="password" id="loginPassword"
+                        placeholder="Password">
+                    <span onclick="togglePassword('loginPassword')">👁</span>
+                </div>
+                <small></small>
+
+                <button type="submit">Login</button>
+                <p>New user? <a href="#" id="goToSignup">Sign Up</a></p>
+            </form>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
