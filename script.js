@@ -103,7 +103,7 @@ const user = JSON.parse(localStorage.getItem("user"));
     loginPassword.value === user.password
     ) {
     alert("Login Successful");
-    window.location.href = "https://wandhub.netlify.app/";
+    window.location.href = "https://wander-hub-pi.vercel.app/";
     } else {
     alert("Invalid credentials");
     }
