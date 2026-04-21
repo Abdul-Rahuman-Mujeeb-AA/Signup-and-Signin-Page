@@ -43,7 +43,7 @@ const confirmPassword = document.getElementById("confirmPassword");
 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 const phonePattern = /^[0-9]{10}$/;
 const cityPattern = /^[A-Za-z ]+$/;
-const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8}$/;
 
     if (name.value === "") {
     showError(name, "Name required");
